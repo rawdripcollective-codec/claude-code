@@ -1,5 +1,15 @@
 name: Oncall Issue Triage
-description: Automatically identify and label critical blocking issues requiring oncall attention
+# Automatically identify and label critical blocking issues requiring oncall attention
+#
+# Required repository secret:
+#   ANTHROPIC_API_KEY - API key from https://console.anthropic.com/
+#
+# To add the secret:
+#   1. Go to Settings > Secrets and variables > Actions
+#   2. Click "New repository secret"
+#   3. Name: ANTHROPIC_API_KEY
+#   4. Value: Your Anthropic API key
+#
 on:
   push:
     branches:
